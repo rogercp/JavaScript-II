@@ -5,7 +5,6 @@ function dragon(){
   const egg=7;
   function chicken(){
     console.log(`I just ate the dragons' ${egg} eggs`);
-    debugger;
   }
   chicken();
 }
