@@ -80,7 +80,7 @@ contains("Pencil",items,function(cb){
 
 /* STRETCH PROBLEM */
 
-const listy=[1,2,4,5,6,7,7,8,9];
+const listy=[1,2,4,5,6,7,7,8,9,9,4,4,4];
 // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
