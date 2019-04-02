@@ -1,6 +1,18 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function dragon(){
+  const egg=7;
+  function chicken(){
+    console.log(`I just ate the dragons' ${egg} eggs`);
+    debugger;
+  }
+  chicken();
+}
+dragon();
+
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
