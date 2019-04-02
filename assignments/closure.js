@@ -17,12 +17,27 @@ dragon();
 
 
 // ==== Challenge 2: Create a counter function ====
-const counter = () => {
-  // Return a function that when invoked increments and returns a counter variable.
-};
+// const counter = () => {
+//   // Return a function that when invoked increments and returns a counter variable.
+// };
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
+
+function counter(){
+  let counter=0;
+  return function currentCount(){
+    counter ++;
+    return counter;
+  }
+};
+const currentCount=counter();
+console.log(currentCount());
+console.log(currentCount());
+
+
+
+
 
 // ==== Challenge 3: Create a counter function with an object that can increment and decrement ====
 const counterFactory = () => {

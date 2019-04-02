@@ -102,7 +102,29 @@ console.log(ticketPriceTotal);
 //problems using one or many of the array methods listed above.
 
 // Problem 1
+// everyone increased their donations by 20%
+
+let increaseDonations=runners.map(currentValue=>{
+    return(currentValue.donation+currentValue.donation*.2);
+});
+console.log(increaseDonations);
+
+
 
 // Problem 2
+//filter out skinix company people
+
+let notSkinix=runners.filter(currentValue=>{
+    return(currentValue.company_name!=="Skinix");
+});
+console.log(notSkinix);
 
 // Problem 3
+//use reduce to fin ave donation by each person;
+//totoal donations 
+
+let avgDonation=runners.reduce((total,currentValue)=>{
+    return (total+currentValue.donation/50);
+},0);
+console.log(avgDonation);
+
